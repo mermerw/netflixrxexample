@@ -30,6 +30,7 @@ public class VideoService {
             @Override
             public void call(Subscriber<? super Video> subscriber) {
                 try {
+                    int b  =1;
                     String response = new Query(userid).connect();
                     /** parse the video objects from json string and emit them one by one, noted that by using this
                      * API call, the video objects are incomplete ones, which need rating, meta data, and bookmark
